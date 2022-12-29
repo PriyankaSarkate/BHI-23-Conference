@@ -26,12 +26,12 @@
 
 body{
     background-color: #fafafa;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
     color: #505050; 
     text-align:left;
     font-family:'Roboto',sans-serif;
-    font-size:1em;
+    font-size:1.75em;
     line-height:1.5em;
     margin: 60px auto;
     width: 1000px;
