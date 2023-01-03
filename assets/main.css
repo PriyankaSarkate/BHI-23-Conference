@@ -37,7 +37,7 @@ body{
     width: 1000px;
 }
 
-a{color: #b8860b; text-decoration:none;}
+a{color: #b8860b; text-decoration:none; font-size: 0.875em;}
 a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
 a:hover{color: #b2132e;}
