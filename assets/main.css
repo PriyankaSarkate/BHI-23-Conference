@@ -127,12 +127,19 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
 }
-.part-a {
+#left-block {
     width: 66%; /* take up half of the screen */
     float: left; /* float left to allow the other div to be next to it */
+    max-width:600px;
 }
-.part-b {
+#right-block {
     width: 33%; /* take up half of the screen */
     float: right; /* float right to allow the other div to be next to it */
+}
+#left-block p {
+  margin: 0;
+  padding: 0;
+  white-space: normal;
+  word-wrap: normal;
 }
 
