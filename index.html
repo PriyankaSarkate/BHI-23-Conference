@@ -1,66 +1,192 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
+  <head>
+    <title>IEEE Biomedical Health Informatics (BHI'23)</title>
+    <style>
+    
+    *{
+    border:0;
+    font:inherit;
+    font-size:1em;
+    margin:0;
+    vertical-align:top;
+}
 
-<head>
-    <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/logo.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>BHI-2023 Conference</title>
-</head>
+    body{
+    background-color: #fafafa;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000000;
+    text-align:left;
+    font-size:1em;
+    line-height:1.5em;
+    margin: auto auto;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+      /* CSS for the title */
+     h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+       h2 {
+	
+        text-align: left;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       	font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 span{
+	    border-top: 2px solid black;
+		display: #4285f4;
 
-<body>
+}
 
-    <div class="banner">
-        <img src="assets/Pittsburgh-PA-skyline.jpg.webp" alt="Conference Template Banner" width="100%" >
-        <div class="top-left" style="font-family: Arial, sans-serif;">
-            <span class="title1">IEEE Biomedical Health Informatics (BHI'23) </span><span class="title2"></span> <span class="year"></span>
-        </div>
-        <div class="bottom-right">
-            October 15-18, 2023 <br> Pittsburgh, Pennsylvania, USA
-        </div>
-    </div>
+      /* CSS for the image */
+      img {
+       width: 100%;
+       height: 100%;
 
-    <table class="navigation">
-        <tr>
-           <!-- <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
-            </td>-->
-            <td class="navigation">
-                <a title="Conference Organizing Committee" href="committee">Organizing Committee</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Call for Paper" href="callForPaper">Call for Paper</a> 
-            </td>
-            <td class="navigation">
-                <a class="current" title="Conference Paper Submission" href="submission">Paper Submission</a>
-            </td>
-             <td class="navigation">
-                <a class="current" title="Conference Programs" href="programs">Programs</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Registration" href="registration">Registration</a>
-            </td>
-           
-            <td class="navigation">
-                <a class="current" title="Conference Venue" href="venue">Conference Venue</a>
-            </td>
-            <td class="navigation">
-                <a title="BHI-2022" href="bhi-2022">BHI-2022</a>
-            </td>
-        </tr>
-    </table>
+      }
+      
 
-<div class="left-block">
-    <h2>Conference Overview</h2>
-    <p>
-        The IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI), sponsored by the IEEE Engineering in Medicine and Biology Society (IEEE-EMBS),  is EMBS’s primary technical conference on informatics and computing in healthcare and life sciences. BHI 2023 will take place in Pittsburgh, Pennsylvania from October 15-18, 2023. It will provide a unique forum to showcase basic and translational research products on big data analytics and machine learning that address challenges in the acquisition, transmission, processing, security,  visualization and interpretation of vast volumes of multi-modal biomedical data, as well as related social, behavior, environmental, and geographical data.
+      
+      /* CSS for the navigation bar */
+      nav {
+	    left: 0;
+	    width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        color: #fff;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+      .container {
+	    width: 100%;
+  		position: relative;
+  		height: 200px; /* Give a specific height to the container element */
+  		font-family: Arial, Helvetica, sans-serif;
+}
+
+	.left-column, .right-column {
+  		top: 10px; /* Position the elements 50px from the top of the container element */
+}
+      /* CSS for the columns */
+      .column {
+        width: 45%;
+        float: left;
+        
+      }
+      
+      /* CSS for the text in the columns */
+      .text {
+        font-size: 18px;
+        color: #333;
+        margin-top: 20px;
+        margin-right: 100px;
+      }
+      
+      /* CSS for the date in the columns */
+      .date {
+        font-size: 18px;
+        color: #000000;
+        font-weight: bold;
+        margin-bottom:0;
+      }
+      .date1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+      /* CSS for the date-location div */
+    .date-location {
+		font-size:2em; 
+		color: #fafafa; 
+		line-height: 1.5em; 
+		width: auto; 
+		height: 30px; 
+		padding: 0px 27px 27px 0px; 
+		text-align: right; 
+		position: absolute; 
+		bottom: 40px; 
+		right: 0px; 
+		text-shadow: 0px 0px 6px #000000;
+		font-family: Arial, Helvetica, sans-serif;
+}
+	p {
+    	margin-top: 20px; /* adds space before the paragraph */
+    	margin-bottom: 20px; /* adds space after the paragraph */
+    	
+}     
+
+	.bottom-right {
+		font-size:2.33em; 
+		color: #fafafa; 
+		line-height: 1.5em; 
+		width: auto; 
+		height: 100px; 
+		padding: 0px 27px 27px 0px; 
+		text-align: right; 
+		bottom: 0px; 
+		right: 0px; 
+		text-shadow: 0px 0px 6px #000000;
+}
+		
+	.banner-container {
+  		position: relative;
+  		  height: 300px;
+
+}
+	.grid-container {
+  		display: grid;
+
+  		grid-template-columns: 2.5fr 1fr; /* 3:1 ratio */
+}
+	.left-column, .right-column {
+ 		position: relative;
+ 		margin-bottom: 50px;
+}
+    </style>
+    
+  </head>
+  <body>
+  <h1>IEEE Biomedical Health Informatics (BHI'23)</h1>
+  <div class="banner-container">
+  <img src="assets/Pittsburgh_new.jpg.webp" alt="Conference Template Banner">
+   <div class="date-location">
+    October 15-18, 2023<br>
+    Pittsburgh, Pennsylvania, USA
+   </div>
+ </div>
+ <div class="container">
+    <nav>
+      <a href="committee">Organizing Committee</a>
+      <a href="callForPaper">Call for Paper</a>
+      <a href="submission">Paper Submission</a>
+      <a href="programs">Programs</a>
+      <a href="registration">Registration</a>
+      <a href="venue">Conference Venue</a>
+      <a href="bhi-2022">BHI-2022</a>
+    </nav>
+     
+    
+    
+    <div class="grid-container">
+     <div class="left-column"><h2><span>Conference Overview:</span></h2>
+       <p class="text">The IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI), sponsored by the IEEE Engineering in Medicine and Biology Society (IEEE-EMBS),  is EMBS’s primary technical conference on informatics and computing in healthcare and life sciences. BHI 2023 will take place in Pittsburgh, Pennsylvania from October 15-18, 2023. It will provide a unique forum to showcase basic and translational research products on big data analytics and machine learning that address challenges in the acquisition, transmission, processing, security,  visualization and interpretation of vast volumes of multi-modal biomedical data, as well as related social, behavior, environmental, and geographical data.
 It will also demonstrate the deployment of BHI informatics solutions that integrate key technologies including artificial intelligence, machine learning, mHealth, e-Health, human-computer interface, telemedicine, bioinformatics, sensors, imaging, and public health monitoring, to achieve patient-centric and outcome-driven effective health care. The theme of BHI'23 is <q>Transforming healthcare and medicine with AI</q>
-        . The topical areas of interest include but are not limited to the following
-        </p>
+        . The topical areas of interest include but are not limited to the following:</p>
         <ul>
         <li>Digital twin and cognitive AI</li>
         <li>Intelligent reality</li>
@@ -75,32 +201,18 @@ It will also demonstrate the deployment of BHI informatics solutions that integr
             <li>AI ethics and regulation</li>
             
         </ul>
-    
-</div>
-<div class="right-block">
-    <h2>Important Dates</h2>
-    <p>This is the content for heading B</p>
-</div>
-   <!-- <h2>Organizers</h2>
-
-    <table class="sponsors">
-        <tr>
-            <td class="sponsor">
-               
-            </td>
-            <td class="sponsor">
-                
-                    <img src="assets/IEEE-EMBS-Logo.png" alt="Second Sponsor Name" style="width: 80%">
-               
-            </td>
-            
-        </tr>
-    </table>-->
-
-    <footer>
-        &copy; Conference Organizers
-       <!-- &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Priyanka Sarkate</a>-->
-    </footer>
-
-</body>
+    </div>
+    <div class="right-column"><h2><span>Important Dates:</span></h2>
+      <p class="date">Abstract Submission Deadline: </p>
+      <p class="date1">March 15, 2022</p>
+      <p class="date">Full Paper Submission Deadline: </p>
+      <p class="date1">April 30, 2022</p>
+      <p class="date">Notification of Acceptance: </p>
+      <p class="date1">June 15, 2022</p>
+      <p class="date">Conference Dates: </p>
+      <p class="date1">October 10-12, 2022</p>
+    </div>
+   </div>
+  </div>
+  </body>
 </html>

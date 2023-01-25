@@ -15,131 +15,194 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
 
-*{
+    
+    *{
     border:0;
     font:inherit;
     font-size:1em;
     margin:0;
-    padding:0;
-    vertical-align:baseline;
+    vertical-align:top;
 }
 
-body{
+    body{
     background-color: #fafafa;
     background-size: cover;
     background-attachment: fixed;
-    color: #505050; 
+    color: #000000;
     text-align:left;
-    font-family:'Roboto',sans-serif;
     font-size:1em;
     line-height:1.5em;
-    margin: 60px auto;
-    width: 1000px;
+    margin: auto auto;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+      /* CSS for the title */
+     h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+       h2 {
+	
+        text-align: left;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       	font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 span{
+	    border-top: 2px solid black;
+		display: #4285f4;
+
 }
 
-a{color: #b8860b; text-decoration:none; font-size: 0.875em;}
-a.current{color: #52739e;}
-a.current:hover{color: #e82945;}
-a:hover{color: #b2132e;}
-a:active{color: #e82945;}
-h1,h2,h3,h4{border-top: 3px solid black;clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-h1{font-size:2.67em;}
-h2{font-size:2.00em;}
-h3{font-size:1.67em;}
-h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
-li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
-i,em{font-style:italic;}
-b,strong{font-weight:bold;}
-sup{
-    vertical-align: super;
-    font-size: 0.8em;
-    line-height: 0;
-}
-sub{
-    vertical-align: sub;
-    font-size: 0.8em;
-    line-height: 0;
-}
-table{
-    width: 1000px;
-    margin: 12px auto 24px auto;
-    float: center;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
-}
-th,td{
-    text-align: left;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
-    font-size: 1.2em Arial;
+      /* CSS for the image */
+      img {
+       width: 100%;
+       height: 100%;
+
+      }
+      
+
+      
+      /* CSS for the navigation bar */
+      nav {
+	    left: 0;
+	    width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        color: #fff;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+      .container {
+	    width: 100%;
+  		position: relative;
+  		height: 200px; /* Give a specific height to the container element */
+  		font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Website Banner */
-.banner {position: relative; }
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 0 0 0 0; top: 0px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
-
-/* Conference Title Logo */
-.title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0; font-size:0.50em;} 
-.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
-.year{color: #505050; font-size:0.67em; font-weight: lighter;}
-
-/* Navigation Links (Home, Registration, etc) */
-table.navigation{width:800px;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-
-/* Sponsor Images */
-table.sponsors{width:500px;}
-td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
-
-/* The Table on the Program Page */
-td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
-td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
-td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px;  text-shadow: 1px 1px 2px #d0d0d0; }
-td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px;  text-shadow: 1px 1px 2px #d0d0d0;}
-td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
-td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
-td.abstract img{display: block; margin: 4px auto 8px auto}
-table.plenary{padding-top: 8px; background: #ffffff;}
-
-/* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
-iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
-img.center{display:centre; width:67%; margin:1em auto 2em auto;}
-
-/* Flyer Images */
-table.flyers{width:800px;}
-td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
-
-footer{font-size:0.875em; margin-top:12em; text-align:center;}
-
-/* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1100px) {
-    h2{font-size:3.00em;}
-    p{font-size:1.5em; line-height:1.5em;}
-    th,td,tr{font-size:1.5em; line-height:1.5em;}
-    td.date{font-size:1em; padding-top:0.5em;}
-    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
-    table.footer{font-size:0.33em;}
+	.left-column, .right-column {
+  		top: 10px; /* Position the elements 50px from the top of the container element */
 }
-#left-block {
-    width: 66%; /* take up half of the screen */
-    float: left; /* float left to allow the other div to be next to it */
-    max-width:600px;
+      /* CSS for the columns */
+      .column {
+        width: 45%;
+        float: left;
+        
+      }
+      
+      /* CSS for the text in the columns */
+      .text {
+        font-size: 18px;
+        color: #333;
+        margin-top: 20px;
+        margin-right: 100px;
+      }
+      
+      /* CSS for the date in the columns */
+      .date {
+        font-size: 18px;
+        color: #000000;
+        font-weight: bold;
+        margin-bottom:0;
+      }
+      .date1 {
+	margin-top: 0;
+	margin-bottom: 10px;
 }
-#right-block {
-    width: 33%; /* take up half of the screen */
-    float: right; /* float right to allow the other div to be next to it */
+      /* CSS for the date-location div */
+    .date-location {
+		font-size:2em; 
+		color: #fafafa; 
+		line-height: 1.5em; 
+		width: auto; 
+		height: 30px; 
+		padding: 0px 27px 27px 0px; 
+		text-align: right; 
+		position: absolute; 
+		bottom: 40px; 
+		right: 0px; 
+		text-shadow: 0px 0px 6px #000000;
+		font-family: Arial, Helvetica, sans-serif;
 }
-#left-block p {
-  margin: 0;
-  padding: 0;
-  white-space: normal;
-  word-wrap: normal;
+	p {
+    	margin-top: 20px; /* adds space before the paragraph */
+    	margin-bottom: 20px; /* adds space after the paragraph */
+    	
+}     
+
+	.bottom-right {
+		font-size:2.33em; 
+		color: #fafafa; 
+		line-height: 1.5em; 
+		width: auto; 
+		height: 100px; 
+		padding: 0px 27px 27px 0px; 
+		text-align: right; 
+		bottom: 0px; 
+		right: 0px; 
+		text-shadow: 0px 0px 6px #000000;
+}
+		
+	.banner-container {
+  		position: relative;
+  		  height: 300px;
+
+}
+	.grid-container {
+  		display: grid;
+
+  		grid-template-columns: 2.5fr 1fr; /* 3:1 ratio */
+}
+	.left-column, .right-column {
+ 		position: relative;
+ 		margin-bottom: 50px;
+}
+    
+    th {
+    font-size: 22px;
+} 
+    table {
+    width: 100%; /* Set the table width to 100% */
+    margin-bottom: 20px; /* Add 20px of margin to the bottom of the table */
+}
+td {
+    padding: 10px; /* Add 10px of padding to all sides of the table cells */
 }
 
+.committee {
+	padding-bottom: 0;
+	font-weight: bold;
+	
+}
+.committee1 {
+	padding-bottom: 0;
+	padding-top: 0;
+	
+}
+.co-chair {
+    display: inline-block;
+}
+.co-chair-data {
+    margin-top: 10px;
+}
+
+.footer {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	text-align: centre; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
